@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 body {
     background-color: #2c2c32;
@@ -76,10 +77,13 @@ hr {
 
 
 .info{
+    margin-top: 40px;
     display: flex;
     justify-content: center;
-    margin-top: 40px;
 }
+
+
+
 
 .cards {
     display: flex;
@@ -95,8 +99,8 @@ hr {
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid black;
 
-    width: 350px;
-    height: 340px;
+    width: 20vmax;
+    height: 17vmax;
     padding: 1px;
 
     overflow: auto;
@@ -111,8 +115,9 @@ hr {
 
 .card h4 {
     color: white;
-    font-size: larger;
-    font-family: 'Fira Code', monospace;
+    font-size: x-large;
+    font-family: 'Archivo Black', sans-serif;
+
     margin-left: 20px;
     text-decoration: underline;     
     text-decoration-color: #e60073;  
@@ -122,7 +127,7 @@ hr {
 .card p {
     margin-top: 50px;
     color: aliceblue;
-    font-size: larger;
+    font-size: 15px;
     text-align: center;
     font-family: 'Fira Code', monospace;
     padding-left: 10px;
@@ -134,6 +139,7 @@ a {
     color: yellow;
     text-align: center;
     font-family: 'Fira Code', monospace;
+    font-size: smaller;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -146,12 +152,13 @@ a {
     bottom: 0px; 
     margin-top: 50px;
     width: 100%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Archivo Black', sans-serif;
     text-decoration: none;
 }
 
 .footer p {
     color: aliceblue;
+
 }
 
 
@@ -191,4 +198,13 @@ a {
     }
 
   
+}
+
+
+@media screen and (max-width: 500px) {
+    .info h3 {
+        width: 270px;
+    
+    }
+    
 }
